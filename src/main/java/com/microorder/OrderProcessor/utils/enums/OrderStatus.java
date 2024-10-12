@@ -4,5 +4,5 @@ public enum OrderStatus {
     PENDENTE,
     PROCESSANDO,
     COMPLETO,
-    CANCELADO;
+    CANCELADO
 }

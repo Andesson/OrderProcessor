@@ -1,2 +1,4 @@
-package com.microorder.OrderProcessor.listiner.dto;public record OrderCreatedEvent() {
+package com.microorder.OrderProcessor.listiner.dto;
+
+public record OrderCreatedEvent() {
 }

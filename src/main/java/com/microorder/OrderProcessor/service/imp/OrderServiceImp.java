@@ -1,4 +1,8 @@
-package com.microorder.OrderProcessor.service;
+package com.microorder.OrderProcessor.service.imp;
 
-public class OrderServiceImp {
+import com.microorder.OrderProcessor.service.IOrderService;
+import org.springframework.stereotype.Service;
+
+@Service
+public class OrderServiceImp implements IOrderService {
 }

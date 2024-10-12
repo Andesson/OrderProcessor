@@ -1,2 +1,4 @@
-package com.microorder.OrderProcessor.repository;public interface IOrderRepository {
+package com.microorder.OrderProcessor.repository;
+
+public interface IOrderRepository {
 }
