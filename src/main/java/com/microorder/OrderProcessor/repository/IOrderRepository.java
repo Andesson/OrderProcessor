@@ -1,4 +1,7 @@
 package com.microorder.OrderProcessor.repository;
 
-public interface IOrderRepository {
+import com.microorder.OrderProcessor.entity.OrderEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IOrderRepository extends JpaRepository<OrderEntity, Long> {
 }

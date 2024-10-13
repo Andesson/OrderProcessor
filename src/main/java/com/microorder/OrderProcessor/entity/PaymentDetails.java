@@ -12,9 +12,9 @@ import java.time.LocalDateTime;
 public class PaymentDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; // ID como Long em vez de String
+    private Long id;
 
-    private String paymentMethod; // Alterar o tipo para String
+    private String paymentMethod;
     private BigDecimal amountPaid;
     private LocalDateTime paymentDate;
 }

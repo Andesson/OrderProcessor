@@ -18,21 +18,21 @@ public class OrderEntity {
 
     private LocalDateTime createdAt;
 
-    @Enumerated(EnumType.STRING) // Garanta que o Enum seja salvo como String
+    @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
-    @ManyToOne // Associa um cliente ao pedido
-    @JoinColumn(name = "customer_id") // Nome da coluna que referencia o cliente
+    @ManyToOne
+    @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    @OneToMany(mappedBy = "orderEntity", cascade = CascadeType.ALL) // Aqui referenciamos a propriedade na OrderItem
+    @OneToMany(mappedBy = "orderEntity", cascade = CascadeType.ALL)
     private List<OrderItem> items;
 
     private BigDecimal totalAmount;
     private BigDecimal taxAmount;
     private BigDecimal discountAmount;
 
-    @OneToOne(cascade = CascadeType.ALL) // Associa detalhes de pagamento ao pedido
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "payment_details_id")
     private PaymentDetails paymentDetails;
 

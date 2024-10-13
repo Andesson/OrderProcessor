@@ -22,6 +22,6 @@ public class OrderCreatedListener {
     @RabbitListener(queues = ORDER_CREATED_QUEUE)
     public void listen(Message<OrderCreatedEvent> message){
         logger.info("MESSAGE CONSUMED: {}", message);
-        //orderService.save(message.getPayload());
+        orderService.saveOrder(message.getPayload());
     }
 }
